@@ -28,6 +28,22 @@ body {
     background: var(--body-bg-color);
 }
 
+/* Especificações da section "#colunas" */
+body > #colunas {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3.75rem;
+
+    padding: 2.5rem 2.5rem;
+}
+
+/* Especificações para a section "#coluna-1" */
+#coluna-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
 /* Especificações para a div ".perfil" da coluna 1 do body */
 #coluna-1 > .perfil {
     display: flex;
@@ -171,4 +187,173 @@ body {
 #coluna-1 > .educacao > ul > li > .curso {
     font-weight: 400;
     font-size: 12px;
+}
+
+/* Especificações para a section "#coluna-2" */
+#coluna-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+/* Especificações para a div ".myProjects" da coluna 2 do body */
+
+#coluna-2 > .myProjects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.875rem 1.875rem;
+}
+
+#coluna-2 > .myProjects > a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+#coluna-2 > .my-onix-right {
+    padding: 1.875rem 1.875rem;
+}
+
+#coluna-2 > .my-onix-right > .title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+#coluna-2 > .my-onix-right > .title > img {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+#coluna-2 > .my-onix-right > .title > p {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+#coluna-2 > .my-onix-right > p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-color);
+
+    margin-bottom: 1.875rem;
+}
+
+#coluna-2 > .my-onix-right > .classificacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#coluna-2 > .my-onix-right > .classificacao > .pontuacoes {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#coluna-2 > .my-onix-right > .classificacao > .pontuacoes > .pontuacao {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#coluna-2 > .my-onix-right > .classificacao > .pontuacoes > .pontuacao > img {
+    width: 16.67px;
+    height: 15.85px;
+}
+
+#coluna-2 > .my-onix-right > .classificacao > .pontuacoes > .pontuacao > p {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+#coluna-2 > .my-onix-right > .classificacao > .javascript {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#coluna-2 > .my-onix-right > .classificacao > .javascript > div {
+    width: 10px;
+    height: 10px;
+    background: #E7DE79;
+    border: 2px solid #837E9F;
+    border-radius: 50%;
+}
+
+#coluna-2 > .my-onix-right > .classificacao > .javascript > p {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+/* Especificações para a div ".recentPosts" da coluna 2 do body */
+#coluna-2 > .recentPosts {
+    padding: 1.875rem 1.875rem;
+}
+
+/* Especificações para a div ".post" da coluna 2 do body */
+
+#coluna-2 > .post {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+
+    padding: 1.875rem 1.875rem 2.625rem 1.875rem;
+}
+
+#coluna-2 > .post > img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+#coluna-2 > .post > div > .title > h2 {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--text-color);
+
+    margin-bottom: 0.5rem;
+}
+
+#coluna-2 > .post > div > .title > p {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-color);
+
+    margin-bottom: 1.75rem;
+}
+
+#coluna-2 > .post > div > p {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-color);
+
+    margin-bottom: 0.8rem;
+}
+
+#coluna-2 > .post > div > .tags {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-color);
+
+    display: flex;
+    align-items: center;
+    gap: 1.5625rem;
+}
+
+body > p {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-color);
+    text-align: center;
+
+    margin-bottom: 1.25rem;
 }
