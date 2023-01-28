@@ -66,6 +66,7 @@ body > #colunas {
 #coluna-1 > .perfil > h1 {
     font-weight: 700;
     font-size: 23px;
+    text-align: center;
     color: var(--text-color);
 
     margin-bottom: 0.5rem;
@@ -74,6 +75,7 @@ body > #colunas {
 #coluna-1 > .perfil > h2 {
     font-weight: 300;
     font-size: 13px;
+    text-align: center;
     color: var(--text-color);
 }
 
@@ -304,9 +306,9 @@ body > #colunas {
 #coluna-2 > .post {
     display: flex;
     align-items: center;
-    gap: 1.25rem;
+    gap: 1.875rem;
 
-    padding: 1.875rem 1.875rem 2.625rem 1.875rem;
+    padding: 1.875rem 2rem;
 }
 
 #coluna-2 > .post > img {
@@ -325,18 +327,18 @@ body > #colunas {
 
 #coluna-2 > .post > div > .title > p {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--text-color);
 
-    margin-bottom: 1.75rem;
+    margin-bottom: 0.5rem;
 }
 
 #coluna-2 > .post > div > p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--text-color);
 
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.625rem;
 }
 
 #coluna-2 > .post > div > .tags {
@@ -356,4 +358,113 @@ body > p {
     text-align: center;
 
     margin-bottom: 1.25rem;
+}
+
+/* Responsividade para a class tags para telas com largura a partir de 1028px */
+@media(max-width: 1028px){
+    /* Coluna-1: */
+    #coluna-1 > .tecnologias > .itens > p {
+        font-size: 9px;
+    }
+
+    /* Coluna-2: */
+    #coluna-2 > .post {
+        align-items: flex-start;
+    }
+
+    #coluna-2 > .post > img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #coluna-2 > .post > div > .title > h2 {
+        font-size: 16px;
+    }
+
+    #coluna-2 > .post > div > .title > p {
+        font-size: 14px;
+    }
+
+    #coluna-2 > .post > div > p {
+        margin-bottom: 1.625rem;
+
+        font-size: 12px;
+    }
+
+    #coluna-2 > .post > div > .tags > p {
+        font-size: 12px;
+    }
+}
+
+/* Responsividade para a class tags para telas com largura a partir de 950px */
+@media(max-width: 950px) {
+    #coluna-2 > .post {
+        gap: 1rem;
+    }
+
+    #coluna-2 > .post > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #coluna-2 > .post > div > .tags {
+        gap: 1rem;
+    }
+}
+
+/* Responsividade para a class tags para telas com largura a partir de 883px */
+@media(max-width: 883px){
+    #coluna-2 > .post > div > .tags {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
+
+/* Responsividade para a class tags para telas com largura a partir de 807px */
+@media(max-width: 807px){
+    #coluna-2 > .post > div > .tags {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
+
+/* Responsividade para a class tags para telas com largura a partir de 739px */
+@media(max-width: 739px){
+    body > #colunas {
+        grid-template-columns: 1fr;
+    }
+
+    #coluna-2 > .post > div > .title > h2 {
+        font-size: 16px;
+    }
+
+    #coluna-2 > .post > div > .title > p {
+        font-size: 12px;
+    }
+
+    #coluna-2 > .post > div > p {
+        margin-bottom: 1.625rem;
+
+        font-size: 12px;
+    }
+
+    #coluna-2 > .my-onix-right > .classificacao {
+        gap: 1.5rem;
+    }
+}
+
+/* Responsividade para a class tags para telas com largura a partir de 467px */
+@media(max-width: 467px) {
+    #coluna-2 > .post > img {
+        width: 90px;
+        height: 90px;
+    }
+
+    #coluna-2 > .post {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
